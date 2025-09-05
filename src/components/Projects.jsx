@@ -4,17 +4,18 @@ const Projects = () => {
   const projectsData = [
     {
       type: 'Professional',
-      title: 'Cloud-Native E-Commerce Platform',
-      role: 'Lead Full Stack Developer',
-      stack: 'Java, Spring Boot, React.js, PostgreSQL, AWS, Apigee',
+      company: 'Birlasoft Limited.',
+      title: 'Senior Application Developer',
+      role: 'Full Stack Developer',
+      stack: 'Java, Spring Boot, React.js, MySQL, AWS, Apigee',
       problem: 'To build a scalable and resilient e-commerce backend capable of handling high traffic and integrating with multiple third-party services.',
       responsibilities: [
         'Designed and developed a microservices architecture for catalog, order, and payment processing.',
         'Implemented secure RESTful APIs and managed them using Apigee API Gateway.',
-        'Developed a responsive and interactive admin dashboard using React.js to manage products and orders.',
+        'Developed a responsive and interactive business-focused credit card application using React.js to apply for credit cards.',
         'Deployed and managed services on AWS, ensuring high availability and fault tolerance.'
       ],
-      outcome: 'Achieved a 40% improvement in order processing speed and reduced API response times by 25%, supporting a 3x increase in user traffic.',
+      outcome: 'Achieved improvement in apply processing and reduced API response times, feature rich user experience.',
       showInUI: true
     },
     {
@@ -30,7 +31,7 @@ const Projects = () => {
         'Managed application deployment and scaling on Pivotal Cloud Foundry (PCF).'
       ],
       outcome: 'Enabled financial analysts to access critical data 60% faster, leading to more informed and timely decision-making.',
-      showInUI: true
+      showInUI: false
     },
     {
       type: 'Personal',
@@ -60,7 +61,10 @@ const Projects = () => {
                   {project.title}
                   <span className={`badge ms-2 ${project.type === 'Professional' ? 'bg-primary' : 'bg-success'}`}>{project.type}</span>
                 </h4>
-                <p className="text-muted mb-2"><strong>Role:</strong> {project.role}</p>
+                <p className="text-muted mb-2">
+                  <strong>Role:</strong> {project.role}
+                  {project.company && <span className="ms-2">| <strong>Company:</strong> {project.company}</span>}
+                </p>
                 <p>{project.stack.split(', ').map((tech, i) => (<span key={i} className="badge bg-secondary bg-opacity-10 text-secondary-emphasis me-1 mb-1 py-1 px-2">{tech}</span>))}</p>
                 <p className="mt-3"><strong>Problem:</strong> {project.problem}</p>
                 <h6 className="mt-4 fw-semibold">Key Contributions:</h6>

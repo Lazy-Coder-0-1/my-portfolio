@@ -17,8 +17,8 @@ const Experience = () => {
             role: 'Senior Application Developer',
             duration: 'May 2021 - May 2025',
             achievements: [
-                'Developed and maintained backend services for a high-traffic web application.',
-                'Contributed to a major database migration project with zero downtime.',
+                'Developed and maintained reliable backend and frontend services that supported critical business operations.',
+                'Handled a major API migration for User verification functionality.',
                 'Refactored legacy code, improving application performance and maintainability.'
             ]
         }
