@@ -7,10 +7,9 @@ const Experience = () => {
             role: 'Security Engineer - II / Full Stack Developer',
             duration: 'June 2025 - Present',
             achievements: [
-                'Led the development of a major new product feature from conception to deployment, resulting in a 15% increase in user engagement.',
-                'Mentored junior developers, improving team productivity and code quality.',
-                'Pioneered the adoption of a new CI/CD pipeline, reducing deployment times by 40%.'
-            ]
+                
+            ],
+            showInUI: true
         },
         {
             company: 'Birlasoft Limited.',
@@ -20,14 +19,15 @@ const Experience = () => {
                 'Developed and maintained reliable backend and frontend services that supported critical business operations.',
                 'Handled a major API migration for User verification functionality.',
                 'Refactored legacy code, improving application performance and maintainability.'
-            ]
+            ],
+            showInUI: true
         }
     ];
     return (
         <Section id="experience" title="Work Experience" bg="bg-white">
             <div className="position-relative mx-auto" style={{maxWidth: '900px'}}>
                 <div className="position-absolute top-0 bottom-0 start-50 translate-middle-x d-none d-md-block" style={{width: '3px', backgroundColor: '#e9ecef'}}></div>
-                {experiencesData.map((exp, index) => (
+                {experiencesData.filter(e => e.showInUI).map((exp, index) => (
                     <div key={index} className={`row g-0 mb-4 justify-content-center`}>
                         <div className="col-md-6"><div className={`position-relative ${index % 2 === 0 ? 'me-md-4' : 'ms-md-4'}`}>
                             <div className="position-absolute top-50 translate-middle-y bg-white border border-primary border-4 rounded-circle d-none d-md-block" style={{width: '20px', height: '20px', [index % 2 === 0 ? 'end' : 'start']: '-10px', zIndex: 1}}></div>
