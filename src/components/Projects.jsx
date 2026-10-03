@@ -5,12 +5,12 @@ const Projects = () => {
     {
       type: 'Professional',
       company: 'Birlasoft Limited.',
-      title: 'Senior Application Developer',
+      title: 'Commercial Credit Card Application',
       role: 'Full Stack Developer',
       stack: 'Java, Spring Boot, React.js, MySQL, AWS, Apigee',
-      problem: 'To build a scalable and resilient e-commerce backend capable of handling high traffic and integrating with multiple third-party services.',
+      problem: 'To build a scalable and resilient backend capable of handling traffic and integrating with multiple third-party services.',
       responsibilities: [
-        'Designed and developed a microservices architecture for catalog, order, and payment processing.',
+        'Designed and developed a microservices architecture for user verification, omni-channel flows, and approval processing.',
         'Implemented secure RESTful APIs and managed them using Apigee API Gateway.',
         'Developed a responsive and interactive business-focused credit card application using React.js to apply for credit cards.',
         'Deployed and managed services on AWS, ensuring high availability and fault tolerance.'
@@ -20,18 +20,19 @@ const Projects = () => {
     },
     {
       type: 'Professional',
-      title: 'Financial Data Analytics Dashboard',
-      role: 'Backend Developer',
-      stack: 'Java, Spring Boot, SQL, PCF',
-      problem: 'To create a system that ingests, processes, and visualizes large volumes of financial data for real-time analysis.',
+      company: 'JP Morgan Chase & Co.',
+      title: 'GRC Ingestion Service',
+      role: 'Full Stack Developer',
+      stack: 'Java, Spring Boot, React.js, Oracle SQL, Apigee',
+      problem: 'To create a system that ingests, processes, and visualizes large volumes of digital asset data for real-time analysis.',
       responsibilities: [
         'Developed high-performance data processing modules to handle daily data feeds.',
-        'Built REST APIs to serve aggregated data to the frontend dashboard.',
+        'Built REST APIs to serve aggregated data to the downstreamfrontend dashboards.',
         'Optimized complex SQL queries to improve data retrieval times by over 50%.',
         'Managed application deployment and scaling on Pivotal Cloud Foundry (PCF).'
       ],
-      outcome: 'Enabled financial analysts to access critical data 60% faster, leading to more informed and timely decision-making.',
-      showInUI: false
+      outcome: 'Enabled compliance analysts to access risk information 60% faster, leading to more informed and timely decision-making.',
+      showInUI: true
     },
     {
       type: 'Personal',

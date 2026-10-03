@@ -8,7 +8,7 @@ const Skills = () => (
       <SkillCard title="Databases" skills={['SQL (Oracle, MySQL)', 'JPA / Hibernate', 'Database Design']} />
       <SkillCard title="Cloud & DevOps" skills={['AWS (EC2, S3, RDS)', 'Pivotal Cloud Foundry (PCF)', 'CI/CD (Jenkins)']} />
       <SkillCard title="Integration & Design" skills={['Apigee API Gateway', 'System Design']} />
-      <SkillCard title="Testing & Others" skills={['JUnit, Mockito', 'Git & GitHub', 'Agile / Scrum Methodologies', 'Splunk']} />
+      <SkillCard title="Testing & Others" skills={['JUnit, Mockito', 'Git & GitHub', 'GitHub Copilot', 'Prompt Engineering', 'Agile / Scrum Methodologies', 'Splunk']} />
     </div>
   </Section>
 );
