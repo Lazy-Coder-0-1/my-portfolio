@@ -27,7 +27,7 @@ const Projects = () => {
       problem: 'To create a system that ingests, processes, and visualizes large volumes of digital asset data for real-time analysis.',
       responsibilities: [
         'Developed high-performance data processing modules to handle daily data feeds.',
-        'Built REST APIs to serve aggregated data to the downstreamfrontend dashboards.',
+        'Built REST APIs to serve aggregated data to the downstream frontend dashboards.',
         'Optimized complex SQL queries to improve data retrieval times by over 50%.',
         'Managed application deployment and scaling on Pivotal Cloud Foundry (PCF).'
       ],
